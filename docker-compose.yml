@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  nasa-api-tests:
+    build: .
+    environment:
+      - NASA_API=${NASA_API}
+    volumes:
+      - ./reports:/app/reports
+      - ./.env:/app/.env
+      - pip-cache:/root/.cache/pip
+    platform: linux/amd64
+
+volumes:
+  pip-cache:
