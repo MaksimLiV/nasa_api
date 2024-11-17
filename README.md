@@ -17,7 +17,7 @@ To set up the project and run the tests, follow these steps:
 Clone the project repository to your local machine:
 
 ```bash
-git clone https://github.com/MaksimLiV/Assigment.git
+git clone https://github.com/MaksimLiV/nasa_api.git
 cd Assigment
 ```
 
