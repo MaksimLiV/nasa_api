@@ -18,7 +18,7 @@ Clone the project repository to your local machine:
 
 ```bash
 git clone https://github.com/MaksimLiV/nasa_api.git
-cd Assigment
+cd nasa_api
 ```
 
 2. Set up your API key
