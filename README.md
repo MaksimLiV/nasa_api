@@ -4,7 +4,7 @@ This project is an automation of test cases to validate the NASA Astronomy Pictu
 
 ## Requirements
 
-- Python 3.x
+- Python 3.12
 - Docker (for running the tests in a containerized environment)
 - Git
 - `pip` or `pipenv` (for managing dependencies)
