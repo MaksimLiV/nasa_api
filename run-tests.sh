@@ -12,13 +12,13 @@ fi
 
 if [ ! -f .env ]; then
     echo "Error: .env file not found!"
-    echo "Please create .env file with NASA_API=your_api_key"
+    echo "Please create .env file with NASA_API=DEMO_KEY"
     exit 1
 fi
 
 if [ -z "$(grep NASA_API= .env | cut -d '=' -f2)" ]; then
     echo "Error: NASA_API key is not set in .env file!"
-    echo "Please add NASA_API=your_api_key to .env file"
+    echo "Please add NASA_API=DEMO_KEY to .env file"
     exit 1
 fi
 
@@ -30,7 +30,7 @@ export $(cat .env | xargs)
 
 docker-compose up --build
 
-if [ $? -eq 0 ]; then
+if [ $? -eq 0 ]; then 
     echo "Tests completed successfully!"
     echo "Check reports directory for test results."
 else
