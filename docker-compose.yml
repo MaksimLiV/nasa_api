@@ -2,6 +2,8 @@ version: '3.12'
 services:
   nasa-api-tests:
     build: .
+    networks:
+      - test-network
     environment:
       - NASA_API=${NASA_API}
     volumes:
@@ -9,6 +11,11 @@ services:
       - ./.env:/app/.env
       - pip-cache:/root/.cache/pip
     platform: linux/amd64
+    command: behave --format pretty --outfile /app/reports/test_results.txt
 
 volumes:
   pip-cache:
+
+networks:
+  test-network:
+    driver: bridge
