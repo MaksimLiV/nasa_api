@@ -25,7 +25,7 @@ cd nasa_api
 	•	Create a .env file by copying the provided example.env file:
 cp example.env .env
 	•	Open the .env file and insert your NASA API key:
-NASA_API=YOUR_API_KEY
+NASA_API="DEMO_KEY"
 
 3. Run the tests using Docker
 To run the tests in a Docker container, use the provided run-tests.sh script:
@@ -60,5 +60,5 @@ Notes
 
 ### Steps to run the project:
 1. **Clone the repository.**
-2. **Insert your API key into the `example.env` file as `YOUR_API_KEY` and save it as `.env`.**
+2. **Insert your API key into the `example.env` file as `DEMO_KEY` and save it as `.env`.**
 3. **Run the tests using the `run-tests.sh` script after copying and setting the execute permissions.**
